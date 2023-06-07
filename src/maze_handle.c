@@ -48,9 +48,6 @@ bool check_maze_characters(struct maze* mz) {
 	
 }
 
-//TODO check that entry and exit characters differ
-//from each other, as well as from all other characters
-//also, check for null characters
 bool check_chars(struct maze* mz) {
 
 	//check null
@@ -108,13 +105,6 @@ int handle_num_cols(char line[], struct maze* mz, int pos) {
 
 	return pos;
 }
-
-//TODO implement function to check that labyrinth doesn't have missing chars
-//that all the walls are there, basically, but also, 
-//enter and exit chars are there, and there's only one of them respectively
-//iterate through the exterior of the maze, check that every char is labyrinth char, or entrance, or exit
-//keep counter for entrance and exit, if it's more than 1 each, return error
-
 
 //sends maze struct pointer to be allocated
 //draws data from map file
