@@ -9,7 +9,7 @@ Find the shortest path to exit the maze
 ∗ The maze will not be more than a thousand square  
 ∗ At the end of each line, there is a new line  
 ∗ The characters present in the maze must be only those shown on the first line  
-∗ If there is an invalid maze, you will print MAP ERROR on STDERR followed by a new line. The program will then proceed to the next maze treatment
+∗ If there is an invalid maze, you will print MAP ERROR on STDERR followed by a new line. The program will then proceed to the next maze
 
 # Generate a maze:
 ruby mazegen.rb 10 10 "* o12" > maze.txt
