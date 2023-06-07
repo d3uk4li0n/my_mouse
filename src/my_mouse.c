@@ -79,8 +79,7 @@ bool my_mouse(struct maze* mz, int* numSteps) {
 
 	//create visited array
 	bool** visited = malloc(sizeof(bool*) * mz->rows);
-	for (int i = 0; i < mz->rows; i++)
-	{
+	for (int i = 0; i < mz->rows; i++){
 		visited[i] = malloc(sizeof(bool) * mz->columns);
 	}
 	for (int i = 0; i < mz->rows; i++) {
@@ -103,8 +102,7 @@ bool my_mouse(struct maze* mz, int* numSteps) {
 	my_mouse_helper(mz, visited, mz->enterRow, mz->enterCol, minPath,
 		&minDistance, path, distance);
 
-	if (minDistance == 0) //solution not found
-	{
+	if (minDistance == 0){ //solution not found
 		found = false;
 	}
 	else {
@@ -126,16 +124,12 @@ int calcNumSteps(struct maze* mz, int minDistance, struct position minPath[]) {
 	int steps = 0;
 
 	//set path
-	for (int i = 0; i < minDistance; i++)
-	{
-		if (mz->maze[minPath[i].x][minPath[i].y] != mz->exit)
-		{
+	for (int i = 0; i < minDistance; i++){
+		if (mz->maze[minPath[i].x][minPath[i].y] != mz->exit){
 			mz->maze[minPath[i].x][minPath[i].y] = mz->step_char;
 
 			steps += 1;
 		}
 	}
-
 	return steps;
 }
-
