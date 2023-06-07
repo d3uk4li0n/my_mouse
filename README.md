@@ -11,9 +11,9 @@ Find the shortest path to exit the maze
 ∗ The characters present in the maze must be only those shown on the first line  
 ∗ If there is an invalid maze, you will print MAP ERROR on STDERR followed by a new line. The program will then proceed to the next maze
 
-# Installation:
+# Installation
 make  
 make fclean (clean up after usage)
 
-# Generate maze:
+# Generate maze
 ruby mazegen.rb 10 10 "* o12" > maze.txt
