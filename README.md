@@ -12,7 +12,7 @@ Find the shortest path to exit the maze
 ∗ If there is an invalid maze, you will print MAP ERROR on STDERR followed by a new line. The program will then proceed to the next maze
 
 # Installation:
-make
+make  
 make fclean (clean up after usage)
 
 # Generate maze:
